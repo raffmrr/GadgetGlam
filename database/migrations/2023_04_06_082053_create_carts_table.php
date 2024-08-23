@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->date('tanggal');
-            $table->string('status');
+            $table->string('status', 30);
             $table->integer('jumlah_harga');
             $table->timestamps();
         });
